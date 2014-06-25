@@ -1,0 +1,161 @@
+---
+layout: default
+title: Implementations
+---
+      <div class='jumbotron'>
+        <h2>Implementations</h2>
+        <p class='lead'>
+          CoAP is simple enough to implement from scratch for a simple application.
+          <br>
+          For applications where that is not desirable, generic implementations are becoming available for a variety of platforms.
+          Many of these implementations stay private, but some are published with liberal open-source licenses such as the Apache 2.0 or the MIT license.
+        </p>
+      </div>
+      <hr>
+      <div class='row-fluid'>
+        <div class='span4'>
+          
+          <h2 id="big-boxes">Big boxes</h2>
+          <p>CoAP is not only used between constrained devices, but also between them and more powerful systems such as cloud servers, home centrals, smartphones.</p>
+          
+          <h2 id="smartphones">Smartphones</h2>
+          <p>Some implementations are specifically targeting mobile devices such as smartphones and tablets.  These tend to differ between platforms:</p>
+          
+          <h3 id="ios">iOS</h3>
+          
+          <p>A simple iOS client implementation has been written by Wojtek Kordylewski in Objective-C.</p>
+          
+          <p><a class="btn" href="https://github.com/stuffrabbit/iCoAP">View details &raquo;</a></p>
+          
+          <h3 id="android">Android</h3>
+          
+          <p>Many Java components work out of the box on Android.  For
+          instance, <a href="http://people.inf.ethz.ch/mkovatsc/californium.php">Californium</a> and <a href="https://github.com/okleine/nCoAP">nCoAP</a> can be used on an
+          Android device.</p>
+          
+          <p><a class="btn" href="http://people.inf.ethz.ch/mkovatsc/californium.php">View details &raquo;</a>
+          <a class="btn" href="https://github.com/okleine/spitfirefox">View details &raquo;</a></p>
+          
+          <h2 id="browser-based">Browser-based</h2>
+          <p><img alt="" width="30%" style="float: right" src="http://people.inf.ethz.ch/mkovatsc/resources/copper/Cu_box_512.png" />
+          Copper is an extension for Firefox to enable direct access to CoAP resources from a browser.
+          <a class="btn" href="http://people.inf.ethz.ch/mkovatsc/copper.php">View details &raquo;</a></p>
+          
+          <h2 id="server-side">Server-side</h2>
+          
+          <h3 id="java">Java</h3>
+          
+          <p><img alt="" width="30%" style="float: right" src="http://people.inf.ethz.ch/mkovatsc/resources/californium/Cf_box_512.png" />
+          One significant Java-based implementation of CoAP is Californium.</p>
+          
+          <p><a class="btn" href="http://people.inf.ethz.ch/mkovatsc/californium.php">View details &raquo;</a></p>
+          
+          <p>nCoAP is a Java implementation of the CoAP protocol using the
+          Netty NIO client server framework:</p>
+          
+          <p><a class="btn" href="https://github.com/okleine/nCoAP">View details &raquo;</a></p>
+          
+          <h3 id="c">C</h3>
+          
+          <p>Several of the constrained-device implementations, such as
+          <a href="http://libcoap.sourceforge.net/">libcoap</a>, can also be used on the server side.</p>
+          
+          <h3 id="c-1">C<em>#</em></h3>
+          
+          <p>CoAP.NET is an implementation in C# providing CoAP-based services to .NET applications.</p>
+          
+          <p><a class="btn" href="https://github.com/smeshlink/CoAP.NET">View details &raquo;</a></p>
+          
+          <p>CoAPSharp is a lightweight library for building CoAP enabled
+          sensors and machines that also works with <a href="http://www.netmf.com">Microsoft .NET Micro
+          Framework</a>, with a
+          <a href="http://www.coapsharp.com/free-ebook-on-coap/">tutorial</a> for its
+          API:</p>
+          
+          <p><a class="btn" href="http://www.coapsharp.com/">View details &raquo;</a></p>
+          
+          <h3 id="go">Go</h3>
+          
+          <p><a class="btn" href="https://github.com/dustin/go-coap">View details &raquo;</a></p>
+          
+          <h3 id="javascript-nodejs">JavaScript (node.js)</h3>
+          
+          <p><strong>node-coap</strong> is an experimental client and server library for
+          CoAP modelled after the http module.  Install with <code>npm install&#x000A;coap</code>.</p>
+          
+          <p><a class="btn" href="https://github.com/mcollina/node-coap">View details &raquo;</a></p>
+          
+          <h3 id="python">Python</h3>
+          
+          <p><a class="btn" href="https://github.com/siskin/txThings/">View details &raquo;</a></p>
+        </div>
+        <div class='span4'>
+          
+          <h2 id="constrained-devices">Constrained devices</h2>
+          <p>Implementations for <a href="http://tools.ietf.org/html/rfc7228">constrained devices</a> are typically written in C.</p>
+          
+          <h3 id="erbium">Erbium</h3>
+          <p><img alt="" width="30%" style="float: right" src="http://people.inf.ethz.ch/mkovatsc/resources/erbium/Er_box_512.png" />
+          <a href="https://github.com/contiki-os/contiki">Contiki</a> is a widely used research operating system for constrained nodes.
+          Erbium is a full-fledged REST Engine and CoAP Implementation for Contiki.</p>
+          
+          <p><a class="btn" href="http://people.inf.ethz.ch/mkovatsc/erbium.php">View details »</a></p>
+          
+          <h3 id="libcoap">libcoap</h3>
+          <p>A C implementation of CoAP that can be used both on constrained
+          devices (running operating systems such as <a href="http://tinyos.stanford.edu/tinyos-wiki/index.php/CoAP_-13">TinyOS</a>) and on a larger POSIX system:</p>
+          
+          <p><a class="btn" href="http://libcoap.sourceforge.net/">View details »</a></p>
+          
+          <h3 id="tinydtls">tinydtls</h3>
+          <p>To enable CoAP's security on a tiny device, a tiny implementation of DTLS
+          for
+          <a href="http://tools.ietf.org/html/rfc7228">Class 1</a>
+          devices:</p>
+          
+          <p><a class="btn" href="http://tinydtls.sourceforge.net/">View details »</a></p>
+          
+          <h3 id="smcp">smcp</h3>
+          
+          <p>SMCP is a C-based CoAP stack which is suitable for embedded
+          environments, featuring fully asynchronous I/O.</p>
+          
+          <p><a class="btn" href="https://github.com/darconeous/smcp/">View details »</a></p>
+          
+          <h3 id="microcoap">microcoap</h3>
+          <p>A C implementation that can be compiled for both Arduino and POSIX environments:</p>
+          
+          <p><a class="btn" href="https://github.com/1248/microcoap">View details »</a></p>
+          
+          <h3 id="cantcoap">cantcoap</h3>
+          <p>A C implementation that focuses on decoding and encoding,
+          leaving the actual protocol to the application.
+          “The user is expected to deal with retransmissions, timeouts, and message ID matching themselves. This isn’t as arduous as it sounds and makes a lot more sense on a constrained device.”</p>
+          
+          <p><a class="btn" href="https://github.com/staropram/cantcoap">View details »</a></p>
+        </div>
+        <div class='span4'>
+          <h2 id="commercial-implementations">Commercial implementations</h2>
+          
+          <p>We are just beginning to collect information on commercial implementations.
+          If yours is missing, please
+          <a href="https://github.com/coap-technology/coap-technology.github.io/issues/new">create a github issue</a>
+          (free github account required) or
+          <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#099;&#097;&#098;&#111;&#064;&#116;&#122;&#105;&#046;&#111;&#114;&#103;&#063;&#115;&#117;&#098;&#106;&#101;&#099;&#116;&#061;&#099;&#111;&#097;&#112;&#046;&#116;&#101;&#099;&#104;&#110;&#111;&#108;&#111;&#103;&#121;">just send mail</a> to us!</p>
+          
+          <h3 id="sensinode-arm">Sensinode (ARM)</h3>
+          
+          <ol>
+            <li>go to <a href="http://www.arm.com">www.arm.com</a> ➔ Support ➔ download</li>
+            <li>Register</li>
+            <li>Login</li>
+            <li>Go to  Evaluation Product (6th from the top)</li>
+            <li>Click on <a href="https://silver.arm.com/browse/SEN00">Sensinode</a></li>
+            <li>You will find a download link in the right column</li>
+          </ol>
+          
+          <h3 id="etri">ETRI</h3>
+          
+          <p><a class="btn" href="http://www.coap.or.kr">View details »</a></p>
+        </div>
+      </div>
