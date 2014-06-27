@@ -15,8 +15,55 @@ title: Implementations
       <div class='row-fluid'>
         <div class='span4'>
           
-          <h2 id="big-boxes">Big boxes</h2>
-          <p>CoAP is not only used between constrained devices, but also between them and more powerful systems such as cloud servers, home centrals, smartphones.</p>
+          <h2 id="constrained-devices">Constrained devices</h2>
+          <p>Implementations for <a href="http://tools.ietf.org/html/rfc7228">constrained devices</a> are typically written in C.</p>
+          
+          <h3 id="erbium">Erbium</h3>
+          <p><img alt="" width="30%" style="float: right" src="http://people.inf.ethz.ch/mkovatsc/resources/erbium/Er_box_512.png" />
+          <a href="https://github.com/contiki-os/contiki">Contiki</a> is a widely used research operating system for constrained nodes.
+          Erbium is a full-fledged REST Engine and CoAP Implementation for Contiki.</p>
+          
+          <p><a class="btn" href="http://people.inf.ethz.ch/mkovatsc/erbium.php">View details »</a></p>
+          
+          <h3 id="libcoap">libcoap</h3>
+          <p>A C implementation of CoAP that can be used both on constrained
+          devices (running operating systems such as <a href="https://github.com/contiki-os/contiki">Contiki</a> or <a href="http://savannah.nongnu.org/projects/lwip/">LWIP</a>) and on a larger POSIX system.
+          Moreover, the library has been ported to <a href="http://tinyos.stanford.edu/tinyos-wiki/index.php/CoAP_-13">TinyOS</a> and <a href="https://github.com/RIOT-OS/RIOT/tree/master/pkg/libcoap">RIOT</a>.</p>
+          
+          <p><a class="btn" href="http://libcoap.sourceforge.net/">View details »</a></p>
+          
+          <h3 id="tinydtls">tinydtls</h3>
+          <p>To enable CoAP's security on a tiny device, a tiny implementation of DTLS
+          for
+          <a href="http://tools.ietf.org/html/rfc7228">Class 1</a>
+          devices:</p>
+          
+          <p><a class="btn" href="http://tinydtls.sourceforge.net/">View details »</a></p>
+          
+          <h3 id="smcp">SMCP</h3>
+          
+          <p>A small-but-capable C-based CoAP stack suitable
+          for embedded environments.  It supports observing, asynchronous
+          responses to requests, and more.  Features that aren't used can
+          be removed to lower the footprint.</p>
+          
+          <p><a class="btn" href="https://github.com/darconeous/smcp/">View details »</a></p>
+          
+          <h3 id="microcoap">microcoap</h3>
+          <p>A C implementation that can be compiled for both Arduino and POSIX environments:</p>
+          
+          <p><a class="btn" href="https://github.com/1248/microcoap">View details »</a></p>
+          
+          <h3 id="cantcoap">cantcoap</h3>
+          <p>A C implementation that focuses on decoding and encoding,
+          leaving the actual protocol to the application.
+          “The user is expected to deal with retransmissions, timeouts, and message ID matching themselves. This isn’t as arduous as it sounds and makes a lot more sense on a constrained device.”</p>
+          
+          <p><a class="btn" href="https://github.com/staropram/cantcoap">View details »</a></p>
+        </div>
+        <div class='span4'>
+          
+          <p>CoAP is not only used between constrained devices, but also between them and more powerful systems such as cloud servers, home centrals, smartphones:</p>
           
           <h2 id="smartphones">Smartphones</h2>
           <p>Some implementations are specifically targeting mobile devices such as smartphones and tablets.  These tend to differ between platforms:</p>
@@ -90,57 +137,9 @@ title: Implementations
           <p><a class="btn" href="https://github.com/siskin/txThings/">View details &raquo;</a></p>
         </div>
         <div class='span4'>
-          
-          <h2 id="constrained-devices">Constrained devices</h2>
-          <p>Implementations for <a href="http://tools.ietf.org/html/rfc7228">constrained devices</a> are typically written in C.</p>
-          
-          <h3 id="erbium">Erbium</h3>
-          <p><img alt="" width="30%" style="float: right" src="http://people.inf.ethz.ch/mkovatsc/resources/erbium/Er_box_512.png" />
-          <a href="https://github.com/contiki-os/contiki">Contiki</a> is a widely used research operating system for constrained nodes.
-          Erbium is a full-fledged REST Engine and CoAP Implementation for Contiki.</p>
-          
-          <p><a class="btn" href="http://people.inf.ethz.ch/mkovatsc/erbium.php">View details »</a></p>
-          
-          <h3 id="libcoap">libcoap</h3>
-          <p>A C implementation of CoAP that can be used both on constrained
-          devices (running operating systems such as <a href="https://github.com/contiki-os/contiki">Contiki</a> or <a href="http://savannah.nongnu.org/projects/lwip/">LWIP</a>) and on a larger POSIX system.
-          Moreover, the library has been ported to <a href="http://tinyos.stanford.edu/tinyos-wiki/index.php/CoAP_-13">TinyOS</a> and <a href="https://github.com/RIOT-OS/RIOT/tree/master/pkg/libcoap">RIOT</a>.</p>
-          
-          <p><a class="btn" href="http://libcoap.sourceforge.net/">View details »</a></p>
-          
-          <h3 id="tinydtls">tinydtls</h3>
-          <p>To enable CoAP's security on a tiny device, a tiny implementation of DTLS
-          for
-          <a href="http://tools.ietf.org/html/rfc7228">Class 1</a>
-          devices:</p>
-          
-          <p><a class="btn" href="http://tinydtls.sourceforge.net/">View details »</a></p>
-          
-          <h3 id="smcp">SMCP</h3>
-          
-          <p>A small-but-capable C-based CoAP stack suitable
-          for embedded environments.  It supports observing, asynchronous
-          responses to requests, and more.  Features that aren't used can
-          be removed to lower the footprint.</p>
-          
-          <p><a class="btn" href="https://github.com/darconeous/smcp/">View details »</a></p>
-          
-          <h3 id="microcoap">microcoap</h3>
-          <p>A C implementation that can be compiled for both Arduino and POSIX environments:</p>
-          
-          <p><a class="btn" href="https://github.com/1248/microcoap">View details »</a></p>
-          
-          <h3 id="cantcoap">cantcoap</h3>
-          <p>A C implementation that focuses on decoding and encoding,
-          leaving the actual protocol to the application.
-          “The user is expected to deal with retransmissions, timeouts, and message ID matching themselves. This isn’t as arduous as it sounds and makes a lot more sense on a constrained device.”</p>
-          
-          <p><a class="btn" href="https://github.com/staropram/cantcoap">View details »</a></p>
-        </div>
-        <div class='span4'>
           <h2 id="commercial-implementations">Commercial implementations</h2>
           
-          <p>We are just beginning to collect information on commercial implementations.
+          <p>We are just beginning to collect information on closed-source commercial implementations.
           If yours is missing, please
           <a href="https://github.com/coap-technology/coap-technology.github.io/issues/new">create a github issue</a>
           (free github account required) or
