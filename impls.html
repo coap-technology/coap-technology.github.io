@@ -81,28 +81,6 @@ title: Implementations
           
           <p>CoAP is not only used between constrained devices, but also between them and more powerful systems such as cloud servers, home centrals, smartphones:</p>
           
-          <h2 id="smartphones">Smartphones</h2>
-          <p>Some implementations are specifically targeting mobile devices such as smartphones and tablets.  These tend to differ between platforms:</p>
-          
-          <h3 id="ios">iOS</h3>
-          
-          <p>A simple iOS client implementation has been written by Wojtek Kordylewski in Objective-C.</p>
-          
-          <p><a class="btn" href="https://github.com/stuffrabbit/iCoAP">View details &raquo;</a></p>
-          
-          <h3 id="android">Android</h3>
-          
-          <p>Many Java components work out of the box on Android.  For
-          instance, <a href="http://people.inf.ethz.ch/mkovatsc/californium.php">Californium</a> and <a href="https://github.com/okleine/nCoAP">nCoAP</a> can be used on an
-          Android device.</p>
-          
-          <p><a class="btn" href="http://people.inf.ethz.ch/mkovatsc/californium.php">View details &raquo;</a>
-          <a class="btn" href="https://github.com/okleine/spitfirefox">View details &raquo;</a></p>
-          
-          <p><strong>Aneska</strong> is a simple CoAP browser based on <a href="https://github.com/siskin/txThings/">txThings</a>, installable from Google Play.</p>
-          
-          <p><a class="btn" href="https://play.google.com/store/apps/details?id=pl.sixpinetrees.aneska">View details &raquo;</a></p>
-          
           <h2 id="browser-based">Browser-based</h2>
           <p><img alt="" width="30%" style="float: right" src="http://people.inf.ethz.ch/mkovatsc/resources/copper/Cu_box_512.png" />
           <strong>Copper</strong> is an extension for Firefox to enable direct access to CoAP resources from a browser.
@@ -176,11 +154,39 @@ title: Implementations
           
           <h3 id="ruby">Ruby</h3>
           
-          <p>Install with: <code>gem install coap</code></p>
+          <p>Install a client library with: <code>gem install coap</code></p>
           
-          <p><a class="btn" href="https://github.com/SmallLars/coap">View details &raquo;</a></p>
+          <p><a class="btn" href="https://github.com/nning/coap">View details &raquo;</a></p>
+          
+          <p>Based on this, a Rack-based server implementation provides
+          compatibility with Rails, Sinatra, and other popular Web
+          frameworks: <code>gem install david</code></p>
+          
+          <p><a class="btn" href="https://github.com/nning/david">View details &raquo;</a></p>
         </div>
         <div class='span4'>
+          <h2 id="smartphones">Smartphones</h2>
+          <p>Some implementations are specifically targeting mobile devices such as smartphones and tablets.  These tend to differ between platforms:</p>
+          
+          <h3 id="ios">iOS</h3>
+          
+          <p>A simple iOS client implementation has been written by Wojtek Kordylewski in Objective-C.</p>
+          
+          <p><a class="btn" href="https://github.com/stuffrabbit/iCoAP">View details »</a></p>
+          
+          <h3 id="android">Android</h3>
+          
+          <p>Many Java components work out of the box on Android.  For
+          instance, [Californium][Cf] and [nCoAP][] can be used on an
+          Android device.</p>
+          
+          <p>[View details »][Cf]{: .btn}
+          <a class="btn" href="https://github.com/okleine/spitfirefox">View details »</a></p>
+          
+          <p><strong>Aneska</strong> is a simple CoAP browser based on [txThings][], installable from Google Play.</p>
+          
+          <p><a class="btn" href="https://play.google.com/store/apps/details?id=pl.sixpinetrees.aneska">View details »</a></p>
+          
           <h2 id="commercial-implementations">Commercial implementations</h2>
           
           <p>We are just beginning to collect information on closed-source commercial implementations.
