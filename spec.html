@@ -45,27 +45,39 @@ title: Specification
           <p>
             Several other specifications work together to support using CoAP.
           </p>
-          <h3>Blockwise transfer</h3>
+          <h3>More mechanisms</h3>
           <p>
-            <a href='http://tools.ietf.org/html/rfc7959'>RFC 7959</a>
-            describes how payloads larger than a single package are transferred.
+            With the block-wise transfer modes of
+            <a href='http://tools.ietf.org/html/rfc7959'>RFC 7959</a>,
+            resource representations <strong>larger than a single package</strong> can be exchanged.
           </p>
-          <h3>Observation</h3>
           <p>
+            The observation mechanism introduced in
             <a href='http://tools.ietf.org/html/rfc7641'>RFC 7641</a>
-            allows clients to receive continuous updates when a resource is changed.
+            allows clients to <strong>receive continuous updates</strong> whenever a resource is changed.
           </p>
-          <h3>Link-format</h3>
-          <p>
-            <a href='http://tools.ietf.org/html/rfc6690'>RFC 6690</a>
-            defines the CoAP link-format, a simple format for exposing the
-            resources offered by a CoAP server as the basis for a resource directory.
-          </p>
-          <h3>Group comm</h3>
+          <h3>Explored details</h3>
           <p>
             Employing the basic multicast functionality defined in RFC 7252,
             <a href='http://tools.ietf.org/html/rfc7390'>RFC 7390</a>
-            provides additional information and protocol flows for how to use CoAP for group communication.
+            provides additional information and protocol flows for how to use CoAP for <strong>group communication</strong>.
+          </p>
+          <p>
+          <a href='http://tools.ietf.org/html/rfc8075'>RFC 8075</a>
+          establishes rules how CoAP services can be <strong>proxied to HTTP</strong>,
+          and how methods and media types are mapped.
+          </p>
+          <h3>New formats</h3>
+          <p>
+            <a href='http://tools.ietf.org/html/rfc6690'>RFC 6690</a>
+            defines the CoAP <strong>link-format</strong>, a simple format for exposing the
+            resources offered by a CoAP server as the basis for a resource directory.
+          </p>
+          <p>
+            With
+            <a href='http://tools.ietf.org/html/rfc8132'>RFC 8132</a>,
+            the methods <strong>PATCH and FETCH</strong> are introduced, and
+            the use of JSON based patch formats is enabled.
           </p>
         </div>
         <div class='span4'>
