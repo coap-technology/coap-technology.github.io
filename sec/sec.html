@@ -1,0 +1,83 @@
+---
+layout: default
+title: SecOverview
+subbar: true
+---
+<div class='jumbotron'>
+  <h2>CoAP Security</h2>
+  <p class='lead'>
+    The Internet of Things cannot spread as long as it can be exploited by hackers willy-nilly.
+    CoAP does not just pay lip service to security, it actually provides strong security.
+    The IETF is working on several security mechanisms.
+  </p>
+</div>
+<hr>
+<div class='row-fluid'>
+  <div class='span4'>
+    <h2>
+      <a href='/sec/dtls.html'>Transport Layer Security (DTLS)</a>
+    </h2>
+    <p>
+      The DTLS protocol provides communications
+      privacy for datagram protocols. The protocol allows client/server
+      applications to communicate in a way that is designed to prevent
+      eavesdropping, tampering, or message forgery. The DTLS protocol is
+      based on the <a href="https://tools.ietf.org/html/rfc5246">Transport Layer Security (TLS)</a> protocol.
+    </p>
+    <p>
+      The IETF ACE working group is developing a standard that allows
+   constrained servers to delegate client authentication and
+   authorization, and set up a DTLS 1.2 channel between the entities.
+      <a href="/sec/DTLS.html#ace-dtls-profile">DTLS profile of Ace</a>
+    </p>
+  </div>
+  <div class='span4'>
+    <h2>
+      <a href='/sec/OSCORE.html'>Application Layer Security (OSCORE)</a>
+    </h2>
+    <p>
+      OSCORE provides end-to-end protection
+      between endpoints communicating using CoAP or CoAP-mappable HTTP.
+      OSCORE is designed for constrained nodes and networks supporting a
+      range of proxy operations, including translation between different
+      transport protocols.
+    </p>
+    <p>
+      OSCORE is extended with a mechanism to protect group communication using CoAP, called <a href='/sec/OSCORE.html#group-oscore'>Group OSCORE</a>.
+    </p>
+    <p>
+      The IETF ACE working group is developing a standard that allows
+   constrained servers to delegate client authentication and
+   authorization, and set up OSCORE between the entities.
+      <a href="/sec/OSCORE.html#ace-oscore-profile">OSCORE profile of Ace</a>
+    </p>
+  </div>
+  <div class='span4'>
+    <h2>Other security extensions</h2>
+    <p>
+      Several other specifications work together to support security in CoAP. Enhancements to CoAP that mitigate security issues in particular use
+      cases are been developed.
+    </p>
+    <h3>Echo</h3>
+    <p>
+      The Echo option enables a CoAP server to verify the freshness
+      of a request or to force a client to demonstrate reachability at its
+      claimed network address; it is now the recommeded way to mitigate
+      amplification attacks.
+    </p>
+    <h3>Request-Tag</h3>
+    <p>
+      The Request-Tag option allows the CoAP server
+      to match <a href='https://tools.ietf.org/html/rfc7959'>block-wise message</a> fragments belonging to the same request.
+    </p>
+    <h3>Token Processing</h3>
+    <p>
+      The update to the client Token processing requirements of CoAP
+      forbids non-secure reuse of Tokens to ensure binding of responses to
+      requests when CoAP is used with security.
+    </p>
+    <p>
+      <a class='btn' href='https://tools.ietf.org/html/draft-ietf-core-echo-request-tag-09'>View details &raquo;</a>
+    </p>
+  </div>
+</div>

@@ -41,9 +41,51 @@
                 <li>
                   <a href='/tools.html'>Tools</a>
                 </li>
+{% if page.subbar %}
+                <li class="active">
+                  <a href='/sec/sec.html'>
+                    <span class='unabbr'>Security</span>
+                    <span class='abbr'>Sec</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
+            <div class='navbar-inner'>
+              <div class='container'>
+                <ul class='nav'>
+                  <li>
+                    <a href='/sec/sec.html'> Security Overview
+                      <span class='unabbr' hidden >SecOverview</span>
+                      <span class='abbr'>SecOver</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/sec/dtls.html'>
+                      <span class='unabbr' >DTLS</span>
+                      <span class='abbr' >DTLS</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/sec/oscore.html'>
+                      <span class='unabbr' >OSCORE</span>
+                      <span class='abbr'>OSC</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+{% else %}
+            <li>
+              <a href='/sec/sec.html'>Security
+                <span class='unabbr' hidden >Security</span>
+                <span class='abbr'>Sec</span>
+              </a>
+            </li>
+            </ul>
+            </div>
+            </div>
+{% endif %}
         </div>
       </div>
 {{ content }}
