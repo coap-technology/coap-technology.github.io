@@ -41,21 +41,39 @@ title: Specification
           </p>
         </div>
         <div class='span4'>
-          <h2>Other specifications</h2>
+          <h2>Extension specifications</h2>
           <p>
             Several other specifications work together to support using CoAP.
           </p>
-          <h3>Link-format</h3>
+          <h3>More mechanisms</h3>
           <p>
-            <a href='http://tools.ietf.org/html/rfc6690'>RFC 6690</a>
-            defines the CoAP link-format, a simple format for exposing the
-            resources offered by a CoAP server as the basis for a resource directory.
+            With the block-wise transfer modes of
+            <a href='http://tools.ietf.org/html/rfc7959'>RFC 7959</a>,
+            resource representations <strong>larger than a single package</strong> can be exchanged.
           </p>
-          <h3>Group comm</h3>
+          <p>
+            The observation mechanism introduced in
+            <a href='http://tools.ietf.org/html/rfc7641'>RFC 7641</a>
+            allows clients to <strong>receive continuous updates</strong> whenever a resource is changed.
+          </p>
+          <p>
+            With
+            <a href='http://tools.ietf.org/html/rfc8132'>RFC 8132</a>,
+            the methods <strong>PATCH and FETCH</strong> are introduced.
+          </p>
+          <h3>Security extensions</h3>
+          <p><a href='http://tools.ietf.org/html/rfc8613'>OSCORE (RFC8613)</a> provides <strong>symmetric</strong> end-to-end security;
+          <a href='http://tools.ietf.org/html/rfc9528'>EDHOC (RFC9528)</a> enables <strong>asymmetric</strong> key exchange for OSCORE and other protocols.</p>
+          <h3>Explored details</h3>
           <p>
             Employing the basic multicast functionality defined in RFC 7252,
             <a href='http://tools.ietf.org/html/rfc7390'>RFC 7390</a>
-            provides additional information and protocol flows for how to use CoAP for group communication.
+            provides additional information and protocol flows for how to use CoAP for <strong>group communication</strong>.
+          </p>
+          <p>
+          <a href='http://tools.ietf.org/html/rfc8075'>RFC 8075</a>
+          establishes rules how CoAP services can be <strong>proxied to HTTP</strong>,
+          and how methods and media types are mapped.
           </p>
         </div>
         <div class='span4'>
@@ -74,5 +92,17 @@ title: Specification
           open-source implementations of the LWM2M standard are available
           for the <a href="http://eclipse.org/wakaama">client</a> and <a href="https://github.com/jvermillard/leshan">server</a> sides.
           Some basic testing support is also available on-line at <a href="http://coap.me">coap.me</a>.</p>
+          <h2>Content formats</h2>
+          <p>
+            <a href='http://tools.ietf.org/html/rfc6690'>RFC 6690</a>
+            defines the CoAP <strong>link-format</strong>, a simple format for exposing the
+            resources offered by a CoAP server as the basis for a resource directory.
+          </p>
+          <p>
+            <a href='https://tools.ietf.org/html/rfc8428'>SenML (RFC8428)</a> is convenient for transporting <strong>sensor</strong> and actuator data.
+          </p>
+          <p>
+            A format for describing concise <strong>problem details</strong> is defined in <a href=https://tools.ietf.org/html/rfc9290'>RFC9290</a>.
+          </p>
         </div>
       </div>
