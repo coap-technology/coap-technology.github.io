@@ -1,0 +1,89 @@
+---
+layout: default
+title: DTLS
+subbar: true
+---
+<div class='jumbotron'>
+  <h2>Datagram Transport Layer Security</h2>
+  <p class='lead'>
+    The DTLS protocol provides communications
+    privacy for datagram protocols. The protocol allows client/server
+    applications to communicate in a way that is designed to prevent
+    eavesdropping, tampering, or message forgery.</p>
+</div>
+<hr>
+<div class='row-fluid'>
+  <div class='span4'>
+
+    <h2>
+      Specifications
+    </h2>
+    <h3>
+      DTLS 1.2
+    </h3>
+    <p>Datagram Transport Layer Security Version 1.2</p>
+    <p>
+      The DTLS 1.2 protocol is
+      based on the Transport Layer Security (TLS) version 1.2 protocol and provides
+      equivalent security guarantees.
+    </p>
+    <p>
+      It has been published as RFC 6347 in January 2012.
+    </p>
+    <p>
+      <a class='btn' href='http://tools.ietf.org/html/rfc6347'>View details &raquo;</a>
+    </p>
+    <h3>DTLS 1.3</h3>
+    <p>
+      Datagram Transport Layer Security Version 1.3
+    </p>
+    <p>
+      The DTLS 1.3 protocol is intentionally based on the Transport Layer
+      Security (TLS) 1.3 protocol and provides equivalent security
+      guarantees with the exception of order protection/non-replayability.
+      Datagram semantics of the underlying transport are preserved by the
+      DTLS protocol.
+    </p>
+    <p>
+      The document is a work-in-progress in the IETF TLS working group.
+    </p>
+    <p>
+      <a class='btn' href='https://tools.ietf.org/html/draft-ietf-tls-dtls13'>View details &raquo;</a>
+    </p>
+    <h3 id="ace-dtls-profile" >DTLS profile of ACE</h3>
+    <p>
+      DTLS profile of the Authentication and Authorization for Constrained Environments Framework
+    </p>
+    <p>
+      This specification defines a profile of the ACE framework that allows
+   constrained servers to delegate client authentication and
+   authorization.  The protocol relies on DTLS version 1.2 for
+   communication security between entities in a constrained network
+   using either raw public keys or pre-shared keys.
+    </p>
+    <p>
+      <a class='btn' href='https://tools.ietf.org/html/draft-ietf-ace-dtls-authorize'>View details &raquo;</a>
+    </p>
+  </div>
+  <div class='span4'>
+    <h2>
+      Implementations
+    </h2>
+    <h3>tinydtls</h3>
+    <p>To enable CoAP's security on a tiny device, a tiny implementation of DTLS
+      for
+      <a href="http://tools.ietf.org/html/rfc7228">Class 1</a>
+      devices</p>
+    <p><a class="btn" href="http://tinydtls.sourceforge.net/">View details »</a></p>
+    <h3>MbedTLS</h3>
+    <p>
+      Mbed TLS is a C library that implements cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols.
+    </p>
+    <p><a class="btn" href="https://github.com/ARMmbed/mbedtls">View details »</a></p>
+  </div>
+  <div class='span4'>
+    <h2>
+      Tools
+    </h2>
+  </div>
+</div>
